@@ -1,6 +1,6 @@
-const itIf = (condition: boolean) => condition ? it : it.skip;
+const itIf = (condition: boolean) => condition ? it : it;
 
-describe.skip('06 - Interface Fighter', () => {
+describe('06 - Interface Fighter', () => {
   it('A interface Fighter existe', () => {
     expect('Fighter.exists').toCompile();
   });

@@ -230,7 +230,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
   Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `describe`. Como o nome indica, esta função "pula" um teste:
 
   ```typescript
-  describe.skip('...', () => {})
+  describe('...', () => {})
   ```
 
   Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.

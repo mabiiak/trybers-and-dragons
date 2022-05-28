@@ -11,12 +11,11 @@ type properties = {
 };
 
 const checkCharacterProperties = (prev: properties, curr: Character): boolean => {
-  if (curr.energy.amount !== 10) return false;
-  if (prev.strength >= curr.strength || prev.strength + 10 < curr.strength) return false;
-  if (prev.dexterity >= curr.dexterity || prev.dexterity + 10 < curr.dexterity) return false;
-  if (prev.defense >= curr.defense || prev.defense + 10 < curr.defense) return false;
-  if ((prev.lifePoints >= curr.lifePoints && curr.lifePoints < curr.race.maxLifePoints) || prev.lifePoints + 10 < curr.lifePoints || curr.race.maxLifePoints < curr.lifePoints) return false;
-
+  if (curr.energy.amount !== 10) return false;  
+  if (prev.strength >= curr.strength || prev.strength + 10 < curr.strength) return false;  
+  if (prev.dexterity >= curr.dexterity || prev.dexterity + 10 < curr.dexterity) return false;  
+  if (prev.defense >= curr.defense || prev.defense + 10 < curr.defense) return false;  
+  if ((prev.lifePoints >= curr.lifePoints && curr.lifePoints < curr.race.maxLifePoints) || prev.lifePoints + 10 < curr.lifePoints || curr.race.maxLifePoints < curr.lifePoints) return false;  
   return true;
 };
 
